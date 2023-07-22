@@ -155,14 +155,14 @@ header nav {
     padding: 18px 0 64px 0;
 }
 
-.reasons .reasons_advantage{
+.reasons .reasons_advantage, .label_button{
     margin: 0 auto;
     width: 115px;
     height: 27px;
     background-color: #000000;
 }
 
-.reasons .reasons_advantage .reasons_advantage_text{
+.reasons .reasons_advantage .reasons_advantage_text, .label_button_text{
     display: flex;
     justify-content: center;
     color: #FFF;
