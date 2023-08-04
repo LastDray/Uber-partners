@@ -1,5 +1,11 @@
 $blue-color: #1EACC7
 $pink-color: #FF5656
+
+=btn_hover
+	&:hover
+		background-image: none
+		background-color: $blue-color
+
 * 
 	font-family: 'Roboto', sans-serif 
 header 
@@ -12,19 +18,19 @@ header
 		height: 50px 
 		background-color: #212121 
 		padding: 13px 70px 
-		z-index: 1 
+		z-index: 5 
 .menu 
 	padding: 0 
 	display: flex 
 	justify-content: space-between 
 	margin: 0px 
 	list-style: none 
-	.menu_link 
+	&_link 
 		color: #FFF 
 		font-size: 15px 
 		font-weight: 300 
 		text-decoration: none 
-	.menu_item 
+	&_item 
 		border-right: 2px dotted black 
 		padding-right: 28px 
 		&:last-child 
@@ -35,29 +41,29 @@ header
 	height: 87px 
 	background-color: rgba(0, 0, 0, 0.6) 
 	z-index: 0 
-	.subheader_logo 
+	&_logo 
 		display: block 
 		margin-top: 16px 
 		max-width: 100% 
-	.subheader_official 
+	&_official 
 		margin-top: 6px 
 		color: #FFF 
 		font-size: 13px 
 		font-weight: 100 
 		opacity: 0.5 
-	.subheader_call 
+	&_call 
 		margin-top: 19px 
 		color: #FFF 
 		text-align: right 
 		font-size: 12px 
 		font-weight: 300 
-	.subheader_phone 
+	&_phone 
 		display: block 
 		color: #FFF 
 		text-align: right 
 		font-size: 22px 
 		text-decoration: none 
-	.subheader_button 
+	&_button 
 		margin-top: 19px 
 		width: 172px 
 		height: 46px 
@@ -69,12 +75,13 @@ header
 		text-align: center 
 		font-size: 14px 
 		text-transform: uppercase 
+		+btn_hover
 .promo 
 	min-height: 800px 
 	background: url(../img/uber_bg.png) center center/cover no-repeat 
 	padding-top: 150px 
 	padding-bottom: 135px 
-	.promo_header 
+	&_header 
 		color: #FFF 
 		text-align: center 
 		font-size: 60px 
@@ -82,7 +89,7 @@ header
 		line-height: 60px 
 		text-transform: uppercase 
 		margin: 0 
-	.promo_subheader 
+	&_subheader 
 		color: #FFF 
 		text-align: center 
 		font-size: 36px 
@@ -91,13 +98,13 @@ header
 		text-transform: uppercase 
 		margin: 0 
 		margin-top: 22px 
-	.promo_descr 
+	&_descr 
 		color: #FFF 
 		text-align: center 
 		font-size: 18px 
 		line-height: 24px 
 		margin-top: 23px 
-	.promo_btn 
+	&_btn 
 		display: block 
 		margin: 115px auto 0 auto 
 		width: 259px 
@@ -111,6 +118,7 @@ header
 		text-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.21) 
 		font-size: 18px 
 		text-transform: uppercase 
+		+btn_hover
 
 .reasons 
 	min-height: 850px 
@@ -223,6 +231,27 @@ header
 			left: 50%
 			transform: translateX(-50%)
 			cursor: pointer
+			&:before
+				content: ""
+				display: block
+				width: 14px
+				height: 2px
+				background-color: $blue-color
+				transition: 0.3s all
+			&:after
+				position: absolute
+				left: 50%
+				transform: translateX(-50%)
+				content: ""
+				display: block
+				width: 2px
+				height: 14px
+				background-color: $blue-color
+				transition: 0.3s all
+			&:hover
+				&:before, &:after
+					background-color: $pink-color
+
 
 
 .choice
@@ -270,3 +299,161 @@ header
 	.mobile_item_#{$i}
 		background: url("../img/cards/Карточка #{$i}.png") center center/cover no-repeat
 		
+.require
+	padding: 66px 0 90px 0
+	&_block
+		margin: 33px 0
+		&_nmb
+			margin-bottom: 0px
+	&_title
+		color: #1CA8C3
+		font-size: 22px
+		font-style: normal
+		font-weight: 400
+	&_list
+		list-style: none
+		padding-left: 50px
+		margin-top: 22px
+		li
+			position: relative
+			color: #222
+			font-size: 17px
+			font-style: normal
+			font-weight: 300
+			margin-bottom: 10px
+			&:before
+				content: ""
+				display: block
+				position: absolute
+				left: -32px
+				width: 21px
+				height: 20px
+				background: url("../icons/check_blue 2.png") center center/cover no-repeat
+	&_descr
+		color: #1CA8C3
+		font-size: 17px
+		font-style: normal
+		font-weight: 300
+	.warning
+		.require_title
+			color: $pink-color
+		.require_list
+			li
+				&:before
+					background: url("../icons/check_red 11.png") center center/cover no-repeat
+	//background: url("../img/map.png") center center/cover no-repeat
+.world
+	.container
+		position: relative
+	padding: 51px 0 25px 0
+	min-height: 716px
+	background-color:#080816
+	.label_button
+		position: relative
+		color: #000
+		background-color: #fff
+		z-index: 1
+	.label_header
+		position: relative
+		color: #fff
+		z-index: 1
+	.label_subheader
+		position: relative
+		color: #fff
+		z-index: 1
+	&_background_img
+		position: absolute
+		background: url("../img/map.png") center center/cover no-repeat
+		width: 100%
+		height: 716px
+		z-index: 0
+		top: -51px
+	&_descr
+		margin-top: 460px
+		position: relative
+		z-index: 1
+		color: #1FBAD6
+		text-align: center
+		font-size: 15px
+		font-style: normal
+		font-weight: 400
+		text-transform: uppercase
+
+footer
+	position: relative
+	padding: 12px 0 50px 0
+	.footer_hr
+		width: 301px
+
+		margin: 0 auto
+		height: 0
+		border: 0px
+		border-top: 7px solid #1FBAD6
+	.footer_nav
+		margin-top: 31.5px
+		display: flex
+		justify-content: center
+		a
+			margin: 0px 14.5px
+			color: #070716
+			font-size: 15px
+			font-style: normal
+			font-weight: 300
+			text-transform: uppercase
+			text-decoration: none
+	.footer_links
+		margin-top: 15px
+		display: flex
+		justify-content: center
+		a
+			margin: 0px 7px
+			color: #999
+			font-size: 11px
+			font-style: normal
+			font-weight: 300
+			text-transform: uppercase
+			text-decoration: none
+	.footer_lang
+		margin-top: 15px
+		display: flex
+		justify-content: center
+		a
+			color: $blue-color
+			font-size: 11px
+			font-style: normal
+			font-weight: 400
+			text-transform: uppercase
+			text-decoration: none
+	.footer_stores
+		width: 296px
+		height: 27px
+		position: absolute
+		display: flex
+		justify-content: space-between
+		right: 20px
+		bottom: 87px
+		a
+			margin: 0 3px
+			img
+				display: inline-block
+				max-width: 100%
+	.footer_socials
+		position: absolute
+		display: flex
+		left: 24px
+		bottom: 82px
+		.footer_social
+			margin: 0 3px
+			width: 35px
+			height: 35px
+			background-color: #070716
+			border-radius: 100%
+
+			i
+				width: 100%
+				height: 100%
+				color: #fff
+				display: flex
+				justify-content: center
+				align-items: center
+
