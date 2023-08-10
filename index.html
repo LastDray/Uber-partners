@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/stylemin.css">
+    <link rel="shortcut icon" href="favicon/favicon-16x16.png" type="image/x-icon">
 </head>
 
 <body>
@@ -22,42 +23,47 @@
             <div class="container">
                 <ul class="menu">
                     <li class="menu_item"><a href="#" class="menu_link">Главная</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">Со своим автомобилем</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">На автомобиле компании</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">Требования</a></li>
+                    <li class="menu_item"><a href="#require" class="menu_link">Со своим автомобилем</a></li>
+                    <li class="menu_item"><a href="#require" class="menu_link">На автомобиле компании</a></li>
+                    <li class="menu_item"><a href="#request" class="menu_link">Требования</a></li>
                     <li class="menu_item"><a href="#" class="menu_link">Контакты</a></li>
                     <li class="menu_item"><a href="#" class="menu_link">Оставить заявку</a></li>
                 </ul>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </nav>
         <div class="subheader">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 offset-md-1">
+                    <div class="col-6 col-md-4 offset-md-1">
                         <a href="#" class="subheader_logo"><img src="icons/Uber.png" alt="logo"></a>
                         <div class="subheader_official">Официальный партнер Uber в Москве</div>
                     </div>
 
-                    <div class="col-md-2 offset-md-2">
+                    <div class="xs-hidden col-md-3 offset-md-1 col-xl-2 offset-xl-2">
                         <div class="subheader_call">Звоните нам ежедневно</div>
                         <a href="tel:+74957970988" class="subheader_phone">8 495 797 09 88</a>
                     </div>
 
-                    <div class="col-md-2">
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <a href="tel:+74957970988" class="xs-visible subheader_phone">8 495 797 09 88</a>
                         <button class="subheader_button">Заказать звонок</button>
                     </div>
                 </div>
-
             </div>
         </div>
     </header>
 
     <section class="promo">
         <div class="containter">
-            <div class="row">
+            <div class="row gx-0">
                 <div class="col-md-10 offset-md-1">
                     <h1 class="promo_header">Компания Uber Partners!</h1>
-                    <h2 class="promo_subheader">Приглашаем подителей! на своём авто!</h2>
+                    <h2 class="promo_subheader">Приглашаем водителей! на своём авто!</h2>
                     <div class="promo_descr">
                         Компания UBER динамически развивающаяся. Компания на рынке занимает лидирующее место
                         средитаксомоторных компаний, Компания абсолютно прозрачная вы можете контролировать все процессы
@@ -78,18 +84,16 @@
 
     <section class="reasons">
         <div class="container">
-            <div class="reasons_advantage">
-                <span class="reasons_advantage_text">
-                    Преимущества
-                </span>
+            <div class="label_button">
+                Преимущества
             </div>
             <h2 class="reasons_header">
                 8 причин начать работать с нами
             </h2>
             <div class="row gy-4">
-                <div class="col-md-6">
+                <div class="col-md-12 col-lg-6 flex-column">
                     <div class="row">
-                        <div class="col-md-4 d-flex align-items-center justify-content-center ">
+                        <div class="col-md-4 d-flex justify-content-center reasons_block">
                             <div class="reason_card_img">
                                 <div class="circle">
                                     <img src="icons/reasons/icon1.png" alt="icon1">
@@ -104,9 +108,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-12 col-lg-6 flex-column">
                     <div class="row">
-                        <div class="col-md-4 d-flex align-items-center justify-content-center ">
+                        <div class="col-md-4 d-flex justify-content-center reasons_block">
                             <div class="reason_card_img">
                                 <div class="circle">
                                     <img src="icons/reasons/icon2.png" alt="icon2">
@@ -121,9 +125,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-12 col-lg-6 flex-column">
                     <div class="row">
-                        <div class="col-md-4 d-flex align-items-center justify-content-center">
+                        <div class="col-md-4 d-flex justify-content-center reasons_block">
                             <div class="reason_card_img">
                                 <div class="circle">
                                     <img src="icons/reasons/icon3.png" alt="icon3">
@@ -138,9 +142,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-12 col-lg-6 flex-column">
                     <div class="row">
-                        <div class="col-md-4 d-flex align-items-center justify-content-center">
+                        <div class="col-md-4 d-flex justify-content-center reasons_block">
                             <div class="reason_card_img">
                                 <div class="circle">
                                     <img src="icons/reasons/icon4.png" alt="icon4">
@@ -155,9 +159,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-12 col-lg-6 flex-column">
                     <div class="row">
-                        <div class="col-md-4 d-flex align-items-center justify-content-center">
+                        <div class="col-md-4 d-flex justify-content-center reasons_block">
                             <div class="reason_card_img">
                                 <div class="circle">
                                     <img src="icons/reasons/icon5.png" alt="icon5">
@@ -172,9 +176,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-12 col-lg-6 flex-column">
                     <div class="row">
-                        <div class="col-md-4 d-flex align-items-center justify-content-center">
+                        <div class="col-md-4 d-flex justify-content-center reasons_block">
                             <div class="reason_card_img">
                                 <div class="circle">
                                     <img src="icons/reasons/icon6.png" alt="icon6">
@@ -190,9 +194,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-12 col-lg-6 flex-column">
                     <div class="row">
-                        <div class="col-md-4 d-flex align-items-center justify-content-center">
+                        <div class="col-md-4 d-flex justify-content-center reasons_block">
                             <div class="reason_card_img">
                                 <div class="circle">
                                     <img src="icons/reasons/icon7.png" alt="icon7">
@@ -207,9 +211,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-12 col-lg-6 flex-column">
                     <div class="row">
-                        <div class="col-md-4 d-flex align-items-center justify-content-center">
+                        <div class="col-md-4 d-flex justify-content-center reasons_block">
                             <div class="reason_card_img">
                                 <div class="circle">
                                     <img src="icons/reasons/icon8.png" alt="icon8">
@@ -238,39 +242,39 @@
                 Сделайте заказ, совершите поездку и оплатите ее стоимость, используя свой мобильный телефон
             </div>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="mobile_item mobile_item_1">
-                        <div class="mobile_item_subtitle">оформление заказа одним касанием</div>
+                        <div class="mobile_item_subtitle">оформление заказа<br>одним касанием</div>
                         <div class="mobile_item_plus"> </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="mobile_item mobile_item_2">
                         <div class="mobile_item_subtitle">надежная подача</div>
                         <div class="mobile_item_plus"> </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="mobile_item mobile_item_3">
                         <div class="mobile_item_subtitle">прозрачные цены</div>
                         <div class="mobile_item_plus"> </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="mobile_item mobile_item_4">
                         <div class="mobile_item_subtitle">безналичная оплата</div>
                         <div class="mobile_item_plus"> </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="mobile_item mobile_item_5">
                         <div class="mobile_item_subtitle">обратная связь</div>
                         <div class="mobile_item_plus"> </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="mobile_item mobile_item_6">
-                        <div class="mobile_item_subtitle">разделить стоимость поездки</div>
+                        <div class="mobile_item_subtitle">разделить<br>стоимость поездки</div>
                         <div class="mobile_item_plus"> </div>
                     </div>
                 </div>
@@ -299,7 +303,7 @@
             Лучше, быстрее и дешевле, чем такси
         </div>
     </section>
-    <section class="require">
+    <section class="require" id="require">
         <div class="container">
             <div class="label_button">
                 Возможности
@@ -322,7 +326,7 @@
                             <li>Работа только по безналичному расчету</li>
                             <li>Деньги перечисляем на карту водителю или наличными в офисе</li>
                         </ul>
-                        <div class="require_descr">
+                        <div class="require_descr"  id="request">
                             В день заработок составляет 7000-12000р + бонус 3000т рублей
                         </div>
                     </div>
@@ -426,6 +430,7 @@
             
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
