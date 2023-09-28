@@ -4,3 +4,4 @@
 *.scss.map
 *.scss
 sass/
+node_modules
